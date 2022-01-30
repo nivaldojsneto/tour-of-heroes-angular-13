@@ -1,0 +1,13 @@
+.heroes {
+  cursor: pointer;
+
+  li {
+    padding: 10px;
+
+    &.selected {
+      background-color: black;
+      color: white;
+      font-weight: 900;
+    }
+  }
+}
