@@ -1,0 +1,10 @@
+.heroes {
+  cursor: pointer;
+
+  li.selected {
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    font-size: 1.8rem;
+  }
+}
