@@ -1,27 +1,15 @@
-# TourOfHeroes
+# Tour Of Heroes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
 
-## Development server
+## How to run this project?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+clone this repository `https://github.com/nivaldojsneto/tour-of-heroes-angular-13.git`
 
-## Code scaffolding
+Run `npm install` to install all project dependencies
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng serve -open` or `ng s -o` to start the project on the local development server. The browser will automatically open the link `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Build
+## Quality Of Code
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[![DeepScan grade](https://deepscan.io/api/teams/16726/projects/20052/branches/533000/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16726&pid=20052&bid=533000)
