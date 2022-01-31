@@ -3,6 +3,9 @@ This project is based on the official [Tour of Heroes Angular Tutorial](https://
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
 
+## Live Version
+[https://tour-of-heroes-angular-13.vercel.app/](https://tour-of-heroes-angular-13.vercel.app/)
+
 ## What was used to make improvements to the original project?
 - [Angular Material](https://material.angular.io/)
 - [Angular Flex-Layout](https://github.com/angular/flex-layout)
