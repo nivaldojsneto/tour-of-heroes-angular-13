@@ -1,31 +1,29 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 //Angular Material Components
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
+const MODULES = [
+  MatButtonModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatExpansionModule,
+  MatTooltipModule,
+  MatCardModule,
+  MatListModule,
+  MatInputModule,
+  MatTableModule,
+];
 @NgModule({
-  imports: [
-    CommonModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatExpansionModule,
-    MatTooltipModule,
-    MatCardModule,
-  ],
-  exports: [
-    MatButtonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatExpansionModule,
-    MatTooltipModule,
-    MatCardModule,
-  ],
+  imports: [MODULES],
+  exports: [MODULES],
   providers: [],
 })
-export class AngularMaterialModule {}
+export class MaterialModule {}

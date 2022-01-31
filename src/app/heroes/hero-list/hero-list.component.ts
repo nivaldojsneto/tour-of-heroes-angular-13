@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from '../../../interfaces/hero.model';
-import { HeroService } from './../../../services/hero.service';
+import { Hero } from '../../core/models/hero.model';
+import { HeroService } from '../../core/services/hero.service';
 
 @Component({
   selector: 'app-hero-list',
@@ -8,6 +8,7 @@ import { HeroService } from './../../../services/hero.service';
   styleUrls: ['./hero-list.component.scss'],
 })
 export class HeroListComponent implements OnInit {
+  displayedColumns: string[] = ['id', 'name', 'actions'];
   heroes: Hero[] = [];
 
   constructor(private heroService: HeroService) {}
