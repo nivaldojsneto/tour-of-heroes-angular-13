@@ -6,7 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-/* Components */
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeroDetailComponent } from './components/hero/hero-detail/hero-detail.component';
 import { HeroListComponent } from './components/hero/hero-list/hero-list.component';
 import { MessagesComponent } from './components/messages/messages.component';
@@ -19,6 +19,7 @@ import { AngularMaterialModule } from './modules/angular-material.module';
     HeroListComponent,
     HeroDetailComponent,
     MessagesComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

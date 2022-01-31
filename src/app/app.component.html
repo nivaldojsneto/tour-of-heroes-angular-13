@@ -1,7 +1,17 @@
 <mat-toolbar color="primary">
-  <span>{{ title }}</span>
+  <span routerLink="/" matTooltip="Home">{{ title }}</span>
 
   <span fxFlex></span>
+
+  <button
+    mat-icon-button
+    class="example-icon favorite-icon"
+    matTooltip="Dashboard"
+    aria-label="Dashboard"
+    routerLink="/dashboard"
+  >
+    <mat-icon>dashboard</mat-icon>
+  </button>
 
   <button
     mat-icon-button
@@ -14,6 +24,7 @@
   </button>
 </mat-toolbar>
 
-<div class="content">
+<div class="content" fxLayoutGap="12px">
   <router-outlet></router-outlet>
+  <app-messages></app-messages>
 </div>
