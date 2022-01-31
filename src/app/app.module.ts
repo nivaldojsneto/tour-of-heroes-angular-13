@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+/* Flex Layout Module */
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,6 +26,7 @@ import { AngularMaterialModule } from './modules/angular-material.module';
     FormsModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

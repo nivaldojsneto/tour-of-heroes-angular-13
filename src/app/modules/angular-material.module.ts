@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   imports: [
@@ -13,12 +14,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatToolbarModule,
     MatIconModule,
     MatExpansionModule,
+    MatTooltipModule,
   ],
   exports: [
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
     MatExpansionModule,
+    MatTooltipModule,
   ],
   providers: [],
 })
