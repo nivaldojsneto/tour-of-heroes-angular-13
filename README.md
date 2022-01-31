@@ -1,10 +1,14 @@
-# Tour Of Heroes
+# Tour Of Heroes Angular 13
+This project is based on the official [Tour of Heroes Angular Tutorial](https://angular.io/tutorial).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
 
+## What was used to make improvements to the original project?
+- [Angular Material](https://material.angular.io/)
+- [Angular Flex-Layout](https://github.com/angular/flex-layout)
+- [Angular ESLint](https://github.com/angular-eslint/angular-eslint)
 ## How to run this project?
-
-Clone this repository `https://github.com/nivaldojsneto/tour-of-heroes-angular-13.git`
+Clone this repository `git clone https://github.com/nivaldojsneto/tour-of-heroes-angular-13.git`
 
 Run `npm install` to install all project dependencies
 
