@@ -27,6 +27,10 @@ export class HeroComponent implements OnInit {
     this.location.back();
   }
 
+  saveHero(): void {
+    this.heroService.update(this.hero).subscribe((hero) => this.goBack());
+  }
+
   ngOnInit(): void {
     this.getHero();
   }

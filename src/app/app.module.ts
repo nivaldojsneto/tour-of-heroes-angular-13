@@ -18,7 +18,7 @@ import { HeroesModule } from './heroes/heroes.module';
     BrowserAnimationsModule,
     HttpClientModule,
 
-    //feature
+    //features
     DashboardModule,
     HeroesModule,
 

@@ -4,9 +4,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
 import { MessagesComponent } from './components/messages/messages.component';
+import { PageNotFoundComponent } from './components/page-not-found.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
-const COMPONENTS = [MessagesComponent, ToolbarComponent];
+const COMPONENTS = [MessagesComponent, ToolbarComponent, PageNotFoundComponent];
 const MODULES = [FlexLayoutModule, MaterialModule];
 
 @NgModule({
