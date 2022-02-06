@@ -15,6 +15,13 @@ Clone this repository `git clone https://github.com/nivaldojsneto/tour-of-heroes
 
 Run `npm install` to install all project dependencies
 
+####Run [JSON Server](https://github.com/typicode/json-server)
+
+In this project, JSON Server was used to simulate a REST API in a simple and fast way.
+
+So before starting the server it is necessary to start our faki api using the `ng run backend` command
+
+####Starting Angular Server
 Run `ng serve -open` or `ng s -o` to start the project on the local development server. The browser will automatically open the link `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Quality Of the Code
