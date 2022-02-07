@@ -17,14 +17,14 @@ export class HeroService {
   ) {}
 
   // GET /heroes
-  getHeroes(): Observable<Hero[]> {
+  getAll(): Observable<Hero[]> {
     return this.http
       .get<Hero[]>(this.heroesUrl)
       .pipe(tap((heroes) => this.log('Starting the logs service')));
   }
 
   // GET /heroes/id
-  getHero(id: number): Observable<Hero> {
+  getOne(id: number): Observable<Hero> {
     return this.http
       .get<Hero>(`${this.heroesUrl}/${id}`)
       .pipe(
@@ -38,7 +38,7 @@ export class HeroService {
       .put<Hero>(`${this.heroesUrl}/${hero.id}`, hero)
       .pipe(
         tap((hero) =>
-          this.log(`update hero id=${hero.id} and name=${hero.name}`)
+          this.log(`update hero id=${hero.id} to name=${hero.name}`)
         )
       );
   }

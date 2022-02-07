@@ -21,7 +21,7 @@
     <mat-card-actions>
       <button
         mat-raised-button
-        [disabled]="!hero.name.trim()"
+        [disabled]="!isFormValid()"
         color="primary"
         (click)="saveHero()"
       >

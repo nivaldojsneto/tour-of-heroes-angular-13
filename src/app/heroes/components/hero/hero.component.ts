@@ -20,7 +20,7 @@ export class HeroComponent implements OnInit {
 
   getHero(): void {
     const id = Number(this.router.snapshot.paramMap.get('id'));
-    this.heroService.getHero(id).subscribe((hero) => (this.hero = hero));
+    this.heroService.getOne(id).subscribe((hero) => (this.hero = hero));
   }
 
   goBack(): void {
@@ -28,7 +28,11 @@ export class HeroComponent implements OnInit {
   }
 
   saveHero(): void {
-    this.heroService.update(this.hero).subscribe((hero) => this.goBack());
+    this.heroService.update(this.hero).subscribe(() => this.goBack());
+  }
+
+  isFormValid(): boolean {
+    return !!this.hero.name.trim();
   }
 
   ngOnInit(): void {
