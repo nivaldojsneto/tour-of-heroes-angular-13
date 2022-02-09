@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardModule } from './../dashboard/dashboard.module';
 import { MaterialModule } from './../material/material.module';
 import { HeroComponent } from './components/hero/hero.component';
@@ -14,9 +14,9 @@ import { HeroesRoutingModule } from './heroes-routing.module';
     CommonModule,
     FlexLayoutModule,
     MaterialModule,
-    FormsModule,
     DashboardModule,
     HeroesRoutingModule,
+    ReactiveFormsModule,
   ],
 })
 export class HeroesModule {}

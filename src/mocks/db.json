@@ -2,7 +2,7 @@
   "heroes": [
     {
       "id": 1,
-      "name": "Goku 2"
+      "name": "Goku"
     },
     {
       "id": 2,
@@ -39,6 +39,10 @@
     {
       "name": "Super Alícia",
       "id": 10
+    },
+    {
+      "name": "Papai Nivado",
+      "id": 11
     }
   ]
 }
