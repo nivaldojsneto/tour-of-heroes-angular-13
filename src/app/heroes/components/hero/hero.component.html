@@ -1,33 +1,41 @@
-<div *ngIf="hero">
-  <h1>{{ hero?.name | uppercase }} Details</h1>
+<h1>{{ isEditing ? "Update" : "Create" }} Hero</h1>
 
-  <mat-card>
-    <mat-card-content fxLayout="column">
-      <mat-form-field>
-        <mat-label>ID</mat-label>
-        <input matInput disabled [value]="hero.id" />
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Hero Name</mat-label>
-        <input
-          type="text"
-          id="name"
-          matInput
-          [(ngModel)]="hero.name"
-          placeholder="Name"
-        />
-      </mat-form-field>
-    </mat-card-content>
-    <mat-card-actions>
-      <button
-        mat-raised-button
-        [disabled]="!isFormValid()"
-        color="primary"
-        (click)="saveHero()"
-      >
-        Save
-      </button>
-      <button mat-raised-button (click)="goBack()">Go Back</button>
-    </mat-card-actions>
-  </mat-card>
-</div>
+<mat-card>
+  <mat-card-content fxLayout="column">
+    <mat-form-field *ngIf="isEditing">
+      <mat-label>ID</mat-label>
+      <input matInput disabled [value]="hero.id" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Hero Name</mat-label>
+      <input
+        type="text"
+        id="name"
+        matInput
+        [(ngModel)]="hero.name"
+        placeholder="Name"
+      />
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions>
+    <button
+      mat-raised-button
+      [disabled]="!isFormValid()"
+      color="primary"
+      *ngIf="!isEditing"
+      (click)="createHero()"
+    >
+      Create
+    </button>
+    <button
+      mat-raised-button
+      [disabled]="!isFormValid()"
+      color="primary"
+      *ngIf="isEditing"
+      (click)="updateHero()"
+    >
+      Update
+    </button>
+    <button mat-raised-button (click)="goBack()">Go Back</button>
+  </mat-card-actions>
+</mat-card>

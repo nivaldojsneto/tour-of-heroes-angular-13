@@ -1,3 +1,16 @@
+.heroes {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__header-title {
+    margin-bottom: 0;
+  }
+}
+
 .mat-row:hover {
   cursor: pointer;
   background-color: whitesmoke;
