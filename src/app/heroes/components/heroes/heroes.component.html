@@ -24,8 +24,18 @@
         matTooltip="View {{ row.name }} Details"
         aria-label="View Hero Details"
         routerLink="/heroes/{{ row.id }}"
+        color="primary"
       >
-        <mat-icon>visibility</mat-icon>
+        <mat-icon>assignment_ind</mat-icon>
+      </button>
+      <button
+        mat-icon-button
+        matTooltip="View {{ row.name }} Details"
+        aria-label="Delete this Hero"
+        color="warn"
+        (click)="deleteHero(row); $event.stopPropagation()"
+      >
+        <mat-icon>delete</mat-icon>
       </button>
     </mat-cell>
   </ng-container>

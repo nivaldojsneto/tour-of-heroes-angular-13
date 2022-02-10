@@ -15,3 +15,16 @@
   cursor: pointer;
   background-color: whitesmoke;
 }
+
+.mat-column-id {
+  max-width: 60px;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.mat-column-actions {
+  border-left: 1px solid currentColor;
+  max-width: 60px;
+  padding-left: 16px;
+  justify-content: center;
+}

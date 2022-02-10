@@ -4,6 +4,7 @@ import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
+import { ConfirmationDialogComponent } from './components/confirmation-dialog/confirmation-dialog.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { PageNotFoundComponent } from './components/page-not-found.component';
@@ -16,6 +17,7 @@ const COMPONENTS = [
   ToolbarComponent,
   PageNotFoundComponent,
   LoadingComponent,
+  ConfirmationDialogComponent,
 ];
 const MODULES = [FlexLayoutModule, MaterialModule];
 
